@@ -43,7 +43,6 @@ class buildMenu
             "text":"sos"
            }');
            
-                  $this->addGroupItem("vill", '{"type":"item","text":"ccc","link":"http://www.google.com","child":"cool"}');
                   $this->changeMenuSizeFont("12px");
                   $this->build('{"text":"home"}','{"text":"maman","child":"bill"}','{"text":"pp","child":"vill"}','{"text":"pp","child":"vill"}','{"text":"pp","child":"vill"}','{"text":"pp","child":"vill"}');
     }
