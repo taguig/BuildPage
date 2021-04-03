@@ -21,7 +21,7 @@ class Index extends page
 
     protected function  createView()
     {
-        $section1=new buildSection(50,50);
+        $section1=new buildSection(100,100);
        $menu=new buildMenu();
        $menu->changeMenuSizeFont("12px");
        $headern=new modelHeader_1(true);
@@ -31,12 +31,13 @@ class Index extends page
        $headern->addItemIcon(new itemIcon("fab fa-facebook-square"));
        $headern->textLogo("TAGUIG");
        $header=new slideView(false);
-       $headerItem=new itemSlideView('image/1.jpg',$section1->getAtrributStyle());
-       $headerItem1=new itemSlideView('image/2.jpg',$section1->getAtrributStyle());
+       $headerItem=new itemSlideView('image/cinema.jpg',$section1->getAtrributStyle());
+       $headerItem1=new itemSlideView('image/musique.jpg',$section1->getAtrributStyle());
+       $headerItem2=new itemSlideView('image/culture.png',$section1->getAtrributStyle());
        $header->addHeader($headern);
        $header->addView($headerItem);
        $header->addView($headerItem1);
-       $header->addView(new itemSlideView('image/1.PNG',$section1->getAtrributStyle()));
+       $header->addView($headerItem2);
        $section1->addView($header);
        $this->addView($section1);
         $this->addJsLib("jquery-3.5.1");

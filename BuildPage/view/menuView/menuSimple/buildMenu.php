@@ -22,24 +22,20 @@ class buildMenu
     {
         $this->nav = new menuPrencipal($id,$class);
  
-                  $this->addGroupItem("cool", '{"type":"item",
-            "text":"mille",
-           "child":"my"
+         
+                  $this->addGroupItem("Cimema", '{"type":"item",
+            "text":"action"
            }','{
            "type":"item",
-            "text":"molle",
-           "child":"my"
-           }');
-                  $this->addGroupItem("my", '{"type":"item",
-            "text":"pip"
+            "text":"amour"
            }','{
            "type":"item",
-            "text":"sos"
+            "text":"aventure"
            }');
            
-                  $this->addGroupItem("vill", '{"type":"item","text":"ccc","link":"http://www.google.com","child":"cool"}');
+                  $this->addGroupItem("zic", '{"type":"item","text":"classic"}','{"type":"item","text":"Jazz"}');
                   $this->changeMenuSizeFont("12px");
-                  $this->build('{"text":"home","link":"/Home"}','{"text":"pp","child":"vill"}','{"text":"pp","child":"vill"}','{"text":"pp","child":"vill"}','{"text":"pp","child":"vill"}');
+                  $this->build('{"text":"home","link":"/Home"}','{"text":"Musique","child":"zic"}','{"text":"Cimema","child":"Cimema"}','{"text":"Culture"}');
     }
     public function changeMenuSizeFont ($size) {
         $this->nav->addAttrStyle("font-size", $size);
