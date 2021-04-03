@@ -21,13 +21,7 @@ class buildMenu
     public function __construct($id = "", $class = "")
     {
         $this->nav = new menuPrencipal($id,$class);
-        $this->addGroupItem("bill", '{"type":"item",
-            "text":"cool"
-           }','{
-           "type":"item",
-            "text":"mm",
-           "child":"vill"
-           }');
+ 
                   $this->addGroupItem("cool", '{"type":"item",
             "text":"mille",
            "child":"my"
@@ -45,7 +39,7 @@ class buildMenu
            
                   $this->addGroupItem("vill", '{"type":"item","text":"ccc","link":"http://www.google.com","child":"cool"}');
                   $this->changeMenuSizeFont("12px");
-                  $this->build('{"text":"home"}','{"text":"maman","child":"bill"}','{"text":"pp","child":"vill"}','{"text":"pp","child":"vill"}','{"text":"pp","child":"vill"}','{"text":"pp","child":"vill"}');
+                  $this->build('{"text":"home","link":"/Home"}','{"text":"pp","child":"vill"}','{"text":"pp","child":"vill"}','{"text":"pp","child":"vill"}','{"text":"pp","child":"vill"}');
     }
     public function changeMenuSizeFont ($size) {
         $this->nav->addAttrStyle("font-size", $size);
