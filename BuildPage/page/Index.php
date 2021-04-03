@@ -17,7 +17,7 @@ class Index extends page
         parent::__construct();
     }
 
-
+    // ICI EN CREE LA PAGE avec createView
 
     protected function  createView()
     {

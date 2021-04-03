@@ -1,5 +1,5 @@
 <?php
-
+// class repraisent requette http
 class httpRequest
 {
 
@@ -21,17 +21,20 @@ private $imageDir=[
     "image",
     "imageview"
 ];
+// type de ficher accepter par le serveur de type font css ou js
     private $contentType = [
         "js" => "application/javascript",
         "css" => "text/css",
         "ttf" => "application/x-font-truetype",
         "woff2" => "font/woff2"
     ];
+    // type de ficher image accepte par le serveur
     private $contentTypeImage = [ 
         "png" => "image/png",
         "jpg"=>"image/jpeg"
     ];
 
+    // function sigletent instance http
     public static function getInstance()
     {
         if (empty(self::$instance)) {
@@ -40,7 +43,7 @@ private $imageDir=[
         return self::$instance;
     }
 
-
+// extraction des donner avec format champ-valeur
     public function ExtracteData()
     {
         $data = explode("/", $_SERVER["REQUEST_URI"]);
@@ -67,6 +70,7 @@ private $imageDir=[
     {
             return  ucfirst(str_replace(".css", "", $this->adressePage [count($this->adressePage)-1]));
     }
+    // router
 
     public function router()
     {  
