@@ -1,0 +1,58 @@
+
+
+.itemMenuSimple {
+	list-style: none;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-width: 100px;
+	color: white;
+    font-weight: bold;
+    padding: 20px 10px;
+}
+
+.itemMenuSimple a {
+	text-decoration: none;
+	color: inherit;
+	text-transform: uppercase;
+}
+
+.itemMenuSimple {
+	position: relative;
+	 
+}
+
+.itemMenuSimple>.downMenu {
+	position: absolute;
+   visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s linear;
+}
+
+.itemMenuSimple:hover>.downMenu {
+	 visibility: visible;
+  opacity: 1;
+	display: flex;
+	flex-direction: column;
+	top: 100%;
+	left: 0%;
+	margin-left: 2px;
+	border: 1px solid #EEE;
+	transform:translateX(-30%);
+    text-align: center;
+}
+
+.downMenu .itemMenuSimple {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+
+}
+
+.downMenu .itemMenuSimple:hover>.downMenu {
+	display: flex;
+	flex-direction: column;
+	top: 0%;
+	left: 100%;
+	transform:translateX(0%);
+}

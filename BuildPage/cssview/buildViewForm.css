@@ -1,0 +1,21 @@
+@charset "windows-1256";
+.formul {
+	display: flex;
+	flex-direction: column;
+	width: 600px;
+	margin:0px auto;
+	
+	
+}
+.item_form {
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+	justify-content: space-between;
+	
+}
+.item_form_ligne{
+	box-sizing:border-box;
+	width: 50%;
+	
+}

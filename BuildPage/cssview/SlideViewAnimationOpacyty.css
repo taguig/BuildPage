@@ -1,0 +1,75 @@
+.navSelectItem {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 20px;
+
+}
+.navSelectItem .selectItemNav{
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.navSelectItem .active {
+    background-color: white;
+}
+.itemSlideView {
+         	position:absolute;
+	        width: 100vw;
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+}
+
+.slideViewListItem{
+	position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
+}
+.SlideView {
+          position: relative;
+          height: 100vh; 
+          width: 100%; 
+          overflow: hidden;
+        
+}
+#slideViewNav{
+	         position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            width: inherit;
+            justify-content: space-between;
+}
+.ItemNav {
+	        font-size: 3rem;
+            text-decoration: none;
+            z-index: 1000;
+            color: rgba(255, 255, 255, 0.5);
+            padding: 10px 15px;
+            background-color: rgba(200, 200, 200,0.4);
+            transition: 0.3s;
+            
+}
+.SlideView .slideViewHeader{
+	position: absolute;
+    top: 0px;
+    left:0px;
+	
+} 
+.ItemNav:hover {
+    background-color: rgba(0, 0, 0,1);
+    color: rgba(255, 255, 255, 1);
+}
+.slideViewLeft {
+margin-left: 10px;	
+}
+.slideViewRight{
+	margin-right: 10px;
+}

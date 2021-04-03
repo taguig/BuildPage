@@ -1,0 +1,17 @@
+@charset "windows-1256";
+
+.Articleslide {
+	position:relative;
+	width: 100%;
+	overflow:hidden;
+	height: 422.875px;
+}
+.listArticleslide {
+	position: absolute;
+	top: 0px;
+	height: inherit;
+}
+.itemArticleslide{
+	width: 33.33%;
+	height: inherit;
+}
